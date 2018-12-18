@@ -1,7 +1,7 @@
 export default class Styler {
     constructor(...classList) {
         this.classList = classList || [];
-        if (this.classList.length == 1 && typeof this.classList[0] === 'undefined') {
+        if (this.classList.length === 1 && typeof this.classList[0] === 'undefined') {
             this.classList = [];
         }
         this.styles = [];
@@ -15,7 +15,8 @@ export default class Styler {
 
     createWith(...styles) {
         let styler = new Styler(this.classList);
-        styler.styles = this.normalizeStyles(...this.classList.concat(styles));
+        styler.setStyles(styles);
+        styler.add(...styles);
 
         return styler;
     }
@@ -40,6 +41,9 @@ export default class Styler {
 
                 case "Styler":
                     classList = classList.concat(style.classList);
+                    break;
+
+                default:
                     break;
             }
         }
