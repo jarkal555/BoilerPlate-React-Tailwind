@@ -13,6 +13,7 @@
     "start": "yarn watch:css & react-scripts start",
     "build": "yarn build:css && react-scripts build",
     "test": "react-scripts test",
+    "eslint": "eslint src",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -30,6 +31,11 @@
     "postcss": "^7.0.6",
     "postcss-cli": "^6.0.1",
     "postcss-nested": "^4.1.1",
-    "tailwindcss": "^0.7.4"
+    "tailwindcss": "^0.7.4",
+    "eslint-config-kentcdodds": "^14.2.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "prettier": "^1.16.4"
   }
 }

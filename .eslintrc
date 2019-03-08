@@ -1,0 +1,26 @@
+{
+  "env": {
+    "jest": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "extends": ["prettier", "kentcdodds/react"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": false,
+        "semi": false,
+        "tabWidth": 2,
+        "useTabs": false,
+        "trailingComma": "all"
+      }
+    ]
+  }
+}
