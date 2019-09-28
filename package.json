@@ -26,6 +26,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^1.3.0",
     "autoprefixer": "^9.4.2",
     "eslint-config-kentcdodds": "^14.2.0",
     "eslint-config-prettier": "^4.1.0",
